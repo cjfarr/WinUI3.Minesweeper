@@ -3,16 +3,15 @@
     using Microsoft.UI.Xaml.Controls;
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     internal class BoardButton : Button
     {
+        public bool IsRevealed { get; set; }
         public bool IsMine { get; set; }
         public int Id { get; set; }
         public int Row { get; set; }
         public int Column { get; set; }
+        public int MinedNeighbors { get; set; }
 
         public List<BoardButton> GetNeighbors(BoardButton[,] grid)
         {
