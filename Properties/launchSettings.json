@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Minesweeper (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Minesweeper (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
